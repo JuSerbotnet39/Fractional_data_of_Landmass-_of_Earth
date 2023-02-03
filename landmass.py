@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 # Data for the pie chart of land area of continents
 labels = ['Asia', 'Africa', 'North America', 'South America', 'Antarctica', 'Europe', 'Australia']
 sizes = [44, 30, 24, 17, 13, 7, 5]
-colors = ['yellowgreen', 'gold', 'lightcoral', lightskyblue', 'red', 'purple', 'orange']
+colors = ['yellowgreen', 'gold', 'lightcoral', 'lightskyblue', 'red', 'purple', 'orange']
 
 # Plotting the pie chart for land area of continents
 plt.subplot(1, 2, 1)

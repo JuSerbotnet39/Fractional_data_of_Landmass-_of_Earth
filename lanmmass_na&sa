@@ -1,0 +1,25 @@
+import matplotlib.pyplot as plt
+
+# Define the data for the first pie chart
+labels_north_america = ['Canada', 'United States', 'Mexico', 'Other Countries']
+sizes_north_america = [41.3, 39.8, 18.9, 0.0]
+colors_north_america = ['blue', 'red', 'green', 'gray']
+
+# Define the data for the second pie chart
+labels = ['Brazil', 'Argentina', 'Peru', 'Colombia', 'Chile', 'Venezuela', 'Ecuador', 'Bolivia', 'Guyana', 'Suriname']
+sizes = [47.7, 8.4, 5.8, 5.0, 4.6, 2.5, 2.2, 1.8, 0.8, 0.2]
+colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'pink', 'brown', 'gray', 'black']
+
+# Plot the first pie chart
+plt.subplot(1, 2, 1)
+plt.pie(sizes_north_america, labels=labels_north_america, colors=colors_north_america, startangle=90, shadow=True, explode=(0.1, 0, 0, 0), autopct='%1.1f%%')
+plt.axis('equal')
+plt.title("North America Landmass Percentage")
+
+# Plot the second pie chart
+plt.subplot(1, 2, 2)
+plt.pie(sizes, labels=labels, colors=colors, startangle=90, shadow=True, explode=(0, 0, 0, 0, 0, 0, 0, 0, 0, 0), autopct='%1.1f%%')
+plt.axis('equal')
+plt.title("South America Landmass Percentage")
+
+plt.show()
